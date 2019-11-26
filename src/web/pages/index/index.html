@@ -1,0 +1,14 @@
+{% extends '../layout/layout.html' %}
+{% block title %} index {% endblock %}
+
+{% block content %}
+  <!-- <div>{{data}}</div> -->
+  {% for ele in data%}
+  <p>{{ele}}</p>
+  {% endfor%}
+  {% include "../../components/index/index.html" with data%}
+{% endblock %}
+
+{% block scripts %}
+  <!-- injectjs -->
+{% endblock  %}
